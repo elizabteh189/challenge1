@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.card{
+    width: 298px;
+    height: auto;
+    margin: auto;
+    
+    background-color: white;
+    box-shadow: 0px 3px 3px grey;
+    border-radius: 12px;
+    
+}
+.card__picture{
+    width: inherit;
+    height: inherit; border-radius: 12px;
+
+}
+.card__img{
+    width: 100%;
+   height: 100%;
+   border-top-left-radius: 12px;
+   border-top-right-radius: 12px;
+}
+.card__contenido{
+
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    /* padding: 20px 30px; */
+    
+    /* width: 400px;
+    height: auto; */
+}
+.card__text{
+   
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  
+    
+}
+.card__text h2{
+    font-size: 19px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(223, 47%, 23%);
+}
+.card__text p{
+    font-size: 12px;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-top: 8px;
+    color: hsl(224, 23%, 55%);
+   
+   
+}
+
+/*Esta es la seccion de la info*/
+
+.card__info{
+    background-color: hsl(225, 100%, 98%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 17px;
+    padding: 13px;
+    border-radius: 8px;
+    
+    
+
+}
+.caja{
+    
+    display: flex;
+    justify-content: space-between;
+}
+.card__picture2{
+     width: 35px;
+    height: 35px;
+    min-width: 30px;
+    /* margin-left: 11px; */
+    
+}
+.card__picture2 img{
+   width: 100%;
+   
+}
+.card__anual{
+    margin-left: 10px;
+   
+    
+   
+
+}
+.card__anual p{
+    font-family: 'Red Hat Display';
+    font-size: 12px;
+    color: hsl(223, 47%, 23%);
+}
+.card__anual span{
+    font-family: 'Red Hat Display';
+    font-size: 12px;
+    color: hsl(224, 23%, 55%);
+}
+.card__info a{
+    font-family: 'Red Hat Display';
+
+    margin-top: 6px;
+    color: hsl(245, 75%, 52%);
+    font-size: 12px;
+
+}
+.card__link{
+    width: 100%;
+    text-align: center;
+}
+.card__enlace {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    font-size:  12px;
+    font-family: 'Red Hat Display';
+    /* margin-bottom: 15px; */
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom:10px ;
+    border-radius: 8px;
+   
+    
+
+
+    
+}
+.primera{
+    box-shadow: 0px 15px 8px hsl(227, 31%, 94%);
+}
+.segundoEnlace{
+    background-color:transparent;
+    color: hsl(224, 23%, 55%);
+   margin-top: 10px;
+}
+
+@media(max-width:375px){
+    .container{
+        /* background-color: hotpink; */
+        background-repeat:repeat-y;
+        background-image: url(../images/pattern-background-mobile.svg);
+        background-size: cover;
+    }
+    .card{
+        width: 250px;
+    }
+    .card__anual p, 
+    .card__anual span{
+        font-size: 11px;
+    }
+    .card__text h2{
+        font-size: 17px;
+    }
+    .card__text p{
+        width: 90%;
+        margin: auto;
+        line-height: 19px;
+     
+    }
+    .card__text h2{
+        margin-bottom: 15px;
+
+    }
+    .card__info{
+        margin-top: 20px;
+    }
+   
+}
